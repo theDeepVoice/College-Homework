@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int i;
+	for (i = 0; i < 10; i++) {
+		if (i == 5)
+			break;
+	}
+	printf("%d", i);
+	return 0;
+}
+
+
+程序输出： 5
+
+可以推断：当break语句被执行时，循环直接结束，并不会执行i++语句。并且由后续调试可以推出：程序执行i++语句是在经过for条件判断语句后，i才增值。
